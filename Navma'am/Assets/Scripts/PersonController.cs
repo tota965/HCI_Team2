@@ -26,5 +26,10 @@ public class PersonController : MonoBehaviour {
             //Move forward (translate along local x-axis)
             transform.Translate(Vector3.forward * Time.deltaTime * walkSpeed );
         }
-	}
+        else if ((Input.GetAxis("Vertical") < 0))
+        {
+            //Move forward (translate along local x-axis)
+            transform.Translate(-Vector3.forward * Time.deltaTime * walkSpeed);
+        }
+    }
 }
