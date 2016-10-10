@@ -91,8 +91,8 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>Library\UnityAssemblies\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="DOTweenEditor">
-      <HintPath>Assets\Graph_Maker\DOTween\Editor\DOTweenEditor.dll</HintPath>
+    <Reference Include="DOTween">
+      <HintPath>Assets\Graph_Maker\DOTween\DOTween.dll</HintPath>
     </Reference>
     <Reference Include="DOTween43">
       <HintPath>Assets\Graph_Maker\DOTween\DOTween43.dll</HintPath>
@@ -100,11 +100,14 @@
     <Reference Include="DOTween46">
       <HintPath>Assets\Graph_Maker\DOTween\DOTween46.dll</HintPath>
     </Reference>
-    <Reference Include="DOTween">
-      <HintPath>Assets\Graph_Maker\DOTween\DOTween.dll</HintPath>
-    </Reference>
     <Reference Include="DOTween50">
       <HintPath>Assets\Graph_Maker\DOTween\DOTween50.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTweenEditor">
+      <HintPath>Assets\Graph_Maker\DOTween\Editor\DOTweenEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="LeapCSharp.NET3.5">
+      <HintPath>Assets\Plugins\LeapCSharp.NET3.5.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -127,6 +130,18 @@
     <Compile Include="Assets\Graph_Maker\Scripts\Editor\WMG_Radar_Graph_E.cs" />
     <Compile Include="Assets\Graph_Maker\Scripts\Editor\WMG_Ring_Graph_E.cs" />
     <Compile Include="Assets\Graph_Maker\Scripts\Editor\WMG_Series_E.cs" />
+    <Compile Include="Assets\LeapMotion\Editor\CustomEditorBase.cs" />
+    <Compile Include="Assets\LeapMotion\Editor\LeapHandControllerEditor.cs" />
+    <Compile Include="Assets\LeapMotion\Editor\LeapImageRetrieverEditor.cs" />
+    <Compile Include="Assets\LeapMotion\Editor\LeapServiceProviderEditor.cs" />
+    <Compile Include="Assets\LeapMotion\Editor\Tests\FrameValidator.cs" />
+    <Compile Include="Assets\LeapMotion\Editor\Tests\HandFactoryTest.cs" />
+    <Compile Include="Assets\LeapMotion\Editor\Tests\TransformCopyTest.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Algorithms\Editor\Tests\SlidingMaxTest.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Attributes\Editor\CombinablePropertyDrawer.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\DataStructures\Editor\Tests\RingBufferTest.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\VR\Editor\EyeTypeEditor.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\VR\Editor\LeapTemporalWarpingEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Graph_Maker\DOTween\DOTween.XML" />
@@ -137,7 +152,17 @@
     <None Include="Assets\Graph_Maker\ReadMe-1.5.5.txt" />
     <None Include="Assets\Graph_Maker\Shaders\AreaShading.shader" />
     <None Include="Assets\Graph_Maker\Shaders\AreaShading_SF.shader" />
+    <None Include="Assets\LeapMotion\Dependencies.txt" />
+    <None Include="Assets\LeapMotion\README_BEFORE_UPDATING.txt" />
+    <None Include="Assets\LeapMotion\Resources\LeapCG.cginc" />
+    <None Include="Assets\LeapMotion\Resources\PassthroughBackground.shader" />
+    <None Include="Assets\LeapMotion\Resources\PassthroughForeground.shader" />
+    <None Include="Assets\LeapMotion\Resources\RuntimeGizmos.shader" />
+    <None Include="Assets\LeapMotion\Resources\ThresholdOverlay.shader" />
+    <None Include="Assets\LeapMotion\Version.txt" />
+    <None Include="Assets\LeapMotion\readme.txt" />
     <None Include="Assets\Materials\UI-Default-No-Alpha.shader" />
+    <None Include="Assets\Plugins\donotdelete.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
