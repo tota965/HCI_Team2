@@ -21,7 +21,7 @@ public class LeapPersonController : MonoBehaviour
     {
         foreach (var h in provider.CurrentFrame.Hands)
         {
-            if (h.IsRight)
+            if (h.IsLeft)
             {
                 foreach (var f in h.Fingers)
                 {
@@ -39,7 +39,7 @@ public class LeapPersonController : MonoBehaviour
                     }
                 }
             }
-            if (h.IsLeft)
+            if (h.IsRight)
             {
                 leftFist = true;
                 foreach (var f in h.Fingers)
