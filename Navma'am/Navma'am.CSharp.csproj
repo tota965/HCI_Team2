@@ -64,9 +64,166 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
+    <Reference Include="DOTween">
+      <HintPath>Assets\Graph_Maker\DOTween\DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween43">
+      <HintPath>Assets\Graph_Maker\DOTween\DOTween43.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween46">
+      <HintPath>Assets\Graph_Maker\DOTween\DOTween46.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween50">
+      <HintPath>Assets\Graph_Maker\DOTween\DOTween50.dll</HintPath>
+    </Reference>
+    <Reference Include="LeapCSharp.NET3.5">
+      <HintPath>Assets\Plugins\LeapCSharp.NET3.5.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Graph_Maker\Examples\X_Dynamic\WMG_X_Data_Provider.cs" />
+    <Compile Include="Assets\Graph_Maker\Examples\X_Dynamic\WMG_X_Dynamic.cs" />
+    <Compile Include="Assets\Graph_Maker\Examples\X_Interactive_Pie\WMG_X_Interactive_Pie.cs" />
+    <Compile Include="Assets\Graph_Maker\Examples\X_Plot_Overtime\WMG_X_Plot_Overtime.cs" />
+    <Compile Include="Assets\Graph_Maker\Examples\X_Ring_Graph\WMG_X_Ring_Graph.cs" />
+    <Compile Include="Assets\Graph_Maker\Examples\X_Simple_Pie\WMG_X_Simple_Pie.cs" />
+    <Compile Include="Assets\Graph_Maker\Examples\X_Tutorial_1\WMG_X_Tutorial_1.cs" />
+    <Compile Include="Assets\Graph_Maker\Scripts\GUIDependent\WMG_Anim.cs" />
+    <Compile Include="Assets\Graph_Maker\Scripts\GUIDependent\WMG_Events.cs" />
+    <Compile Include="Assets\Graph_Maker\Scripts\GUIDependent\WMG_GUI_Functions.cs" />
+    <Compile Include="Assets\Graph_Maker\Scripts\GUIDependent\WMG_Graph_Tooltip.cs" />
+    <Compile Include="Assets\Graph_Maker\Scripts\GUIDependent\WMG_Raycaster.cs" />
+    <Compile Include="Assets\Graph_Maker\Scripts\GUIDependent\WMG_Raycatcher.cs" />
+    <Compile Include="Assets\Graph_Maker\Scripts\GUIDependent\WMG_Text_Functions.cs" />
+    <Compile Include="Assets\Graph_Maker\Scripts\Graphs\WMG_Axis_Graph.cs" />
+    <Compile Include="Assets\Graph_Maker\Scripts\Graphs\WMG_Bezier_Band_Graph.cs" />
+    <Compile Include="Assets\Graph_Maker\Scripts\Graphs\WMG_Grid.cs" />
+    <Compile Include="Assets\Graph_Maker\Scripts\Graphs\WMG_Hierarchical_Tree.cs" />
+    <Compile Include="Assets\Graph_Maker\Scripts\Graphs\WMG_Pie_Graph.cs" />
+    <Compile Include="Assets\Graph_Maker\Scripts\Graphs\WMG_Radar_Graph.cs" />
+    <Compile Include="Assets\Graph_Maker\Scripts\Graphs\WMG_Random_Graph.cs" />
+    <Compile Include="Assets\Graph_Maker\Scripts\Graphs\WMG_Ring_Graph.cs" />
+    <Compile Include="Assets\Graph_Maker\Scripts\Utils\WMG_Change_Obj.cs" />
+    <Compile Include="Assets\Graph_Maker\Scripts\Utils\WMG_EnumFlagAttribute.cs" />
+    <Compile Include="Assets\Graph_Maker\Scripts\Utils\WMG_Enums.cs" />
+    <Compile Include="Assets\Graph_Maker\Scripts\Utils\WMG_List.cs" />
+    <Compile Include="Assets\Graph_Maker\Scripts\Utils\WMG_Reflection.cs" />
+    <Compile Include="Assets\Graph_Maker\Scripts\Utils\WMG_Util.cs" />
+    <Compile Include="Assets\Graph_Maker\Scripts\WMG_Axis.cs" />
+    <Compile Include="Assets\Graph_Maker\Scripts\WMG_Bezier_Band.cs" />
+    <Compile Include="Assets\Graph_Maker\Scripts\WMG_Caching_Functions.cs" />
+    <Compile Include="Assets\Graph_Maker\Scripts\WMG_Data_Generators.cs" />
+    <Compile Include="Assets\Graph_Maker\Scripts\WMG_Data_Source.cs" />
+    <Compile Include="Assets\Graph_Maker\Scripts\WMG_Graph_Auto_Anim.cs" />
+    <Compile Include="Assets\Graph_Maker\Scripts\WMG_Graph_Manager.cs" />
+    <Compile Include="Assets\Graph_Maker\Scripts\WMG_Legend.cs" />
+    <Compile Include="Assets\Graph_Maker\Scripts\WMG_Legend_Entry.cs" />
+    <Compile Include="Assets\Graph_Maker\Scripts\WMG_Link.cs" />
+    <Compile Include="Assets\Graph_Maker\Scripts\WMG_Node.cs" />
+    <Compile Include="Assets\Graph_Maker\Scripts\WMG_Path_Finding.cs" />
+    <Compile Include="Assets\Graph_Maker\Scripts\WMG_Pie_Graph_Slice.cs" />
+    <Compile Include="Assets\Graph_Maker\Scripts\WMG_Ring.cs" />
+    <Compile Include="Assets\Graph_Maker\Scripts\WMG_Series.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Algorithms\SlidingMax.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Algorithms\SmoothedFloat.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Algorithms\SmoothedQuaternion.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Algorithms\SmoothedVector3.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Attributes\AutoFindAttribute.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Attributes\CombinablePropertyAttribute.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Attributes\Disable.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Attributes\DisableIf.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Attributes\EnumFlags.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Attributes\Incrementable.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Attributes\MaxValue.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Attributes\MinMax.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Attributes\MinValue.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Attributes\UnitsAttribute.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\DataStructures\RingBuffer.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\DetectionUtilities\AbstractHoldDetector.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\DetectionUtilities\Detector.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\DetectionUtilities\DetectorLogicGate.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\DetectionUtilities\ExtendedFingerDetector.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\DetectionUtilities\FingerDirectionDetector.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\DetectionUtilities\PalmDirectionDetector.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\DetectionUtilities\PinchDetector.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\DetectionUtilities\ProximityDetector.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\HandFactory.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\HandPool.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\HandProxy.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\HandRepresentation.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Hands\CapsuleHand.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Hands\DebugHand.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Hands\FingerModel.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Hands\HandDrop.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Hands\HandEnableDisable.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Hands\HandFader.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Hands\HandModel.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Hands\HandTransitionBehavior.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Hands\IHandModel.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Hands\RigidFinger.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Hands\RigidHand.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Hands\SkeletalFinger.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Hands\SkeletalHand.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Hands\TestHandFactory.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\LeapDeviceInfo.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\LeapHandController.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\LeapImageRetriever.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\LeapProvider.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\LeapServiceProvider.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Utils\AssertHelper.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Utils\DisconnectionNotice.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Utils\EnableDepthBuffer.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Utils\ExecutionOrder.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Utils\FitHeightToScreen.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Utils\FrameRateControls.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Utils\KeyEnableBehaviors.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Utils\KeyEnableGameObjects.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Utils\LeapUnityExtensions.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Utils\RuntimeColliderGizmos.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Utils\RuntimeGizmoManager.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Utils\RuntimeGizmoToggle.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Utils\SceneSettings.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Utils\StretchToScreen.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\Utils\Utils.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\VR\EyeType.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\VR\LeapVRCameraControl.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\VR\LeapVRTemporalWarping.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\VR\TemporalWarpingStatus.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\VR\VRHeightOffset.cs" />
+    <Compile Include="Assets\Resources\ReverseNormals.cs" />
+    <Compile Include="Assets\Scripts\ColorChange.cs" />
+    <Compile Include="Assets\Scripts\DidColorChange.cs" />
+    <Compile Include="Assets\Scripts\DoubleStatus.cs" />
+    <Compile Include="Assets\Scripts\Geometry.cs" />
+    <Compile Include="Assets\Scripts\LeapPersonController.cs" />
+    <Compile Include="Assets\Scripts\MouseOrbit.cs" />
+    <Compile Include="Assets\Scripts\OnRoomClick.cs" />
+    <Compile Include="Assets\Scripts\Parser.cs" />
     <Compile Include="Assets\Scripts\PersonController.cs" />
+    <Compile Include="Assets\Scripts\TextureScript.cs" />
+    <Compile Include="Assets\Scripts\bmsClasses.cs" />
+    <Compile Include="Assets\Scripts\roomManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Graph_Maker\DOTween\DOTween.XML" />
+    <None Include="Assets\Graph_Maker\DOTween\DOTween43.xml" />
+    <None Include="Assets\Graph_Maker\DOTween\DOTween46.xml" />
+    <None Include="Assets\Graph_Maker\DOTween\DOTween50.xml" />
+    <None Include="Assets\Graph_Maker\DOTween\Editor\DOTweenEditor.XML" />
+    <None Include="Assets\Graph_Maker\ReadMe-1.5.5.txt" />
+    <None Include="Assets\Graph_Maker\Shaders\AreaShading.shader" />
+    <None Include="Assets\Graph_Maker\Shaders\AreaShading_SF.shader" />
+    <None Include="Assets\LeapMotion\Dependencies.txt" />
+    <None Include="Assets\LeapMotion\README_BEFORE_UPDATING.txt" />
+    <None Include="Assets\LeapMotion\Resources\LeapCG.cginc" />
+    <None Include="Assets\LeapMotion\Resources\PassthroughBackground.shader" />
+    <None Include="Assets\LeapMotion\Resources\PassthroughForeground.shader" />
+    <None Include="Assets\LeapMotion\Resources\RuntimeGizmos.shader" />
+    <None Include="Assets\LeapMotion\Resources\ThresholdOverlay.shader" />
+    <None Include="Assets\LeapMotion\Version.txt" />
+    <None Include="Assets\LeapMotion\readme.txt" />
+    <None Include="Assets\Materials\UI-Default-No-Alpha.shader" />
+    <None Include="Assets\Plugins\donotdelete.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
