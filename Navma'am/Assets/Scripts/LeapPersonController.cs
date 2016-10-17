@@ -41,36 +41,35 @@ public class LeapPersonController : MonoBehaviour
             }
             if (h.IsRight)
             {
+                Debug.Log(h.PalmNormal.Roll);
+                Vector3 palmVector = h.PalmNormal.ToVector3();
+                Debug.Log(string.Format("ANGLE BETWEEN: {0}",Vector3.Angle(palmVector, Vector3.down)));
                 leftFist = true;
                 foreach (var f in h.Fingers)
                 {
                     if (f.IsExtended)
-                    {
-                        Debug.Log(string.Format("FINGER: {0}", f.Type));
+                    { 
                         if ((f.Type != Finger.FingerType.TYPE_THUMB) && (f.Type != Finger.FingerType.TYPE_INDEX))
                         {
                             leftFist = false;
-                            Debug.Log("No Fist");
                         }
                         
                     }
                 }
+                pc.turnLeft = false;
+                pc.turnRight = false;
                 if (!leftFist)
                 {
-                    if (h.Direction.Roll > 0)
+                    if (Vector3.Angle(palmVector, Vector3.down) > 120)
                     {
                         pc.turnRight = true;
                         pc.turnLeft = false;
                     }
-                    else if (h.Direction.Roll < 0)
+                    else if (Vector3.Angle(palmVector, Vector3.down) < 60)
                     {
                         pc.turnLeft = true;
                         pc.turnRight = false;
                     }
-                } else
-                {
-                    pc.turnLeft = false;
-                    pc.turnRight = false;
                 }
             }
         }
